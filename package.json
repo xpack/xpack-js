@@ -1,6 +1,6 @@
 {
   "name": "xpack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The xPack tools collection",
   "main": "./lib/module.js",
   "directories": {
@@ -8,10 +8,9 @@
     "lib": "./lib",
     "test": "./test"
   },
-  "bin": {
-  },
+  "bin": {},
   "scripts": {
-     "test": "standard"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
