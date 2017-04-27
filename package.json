@@ -10,7 +10,12 @@
   },
   "bin": {},
   "scripts": {
-    "test": "standard"
+    "prepublishOnly": "standard && npm run test-tap -s",
+    "test": "standard && npm run test-tap -s",
+    "test-coverage": "tap --coverage --reporter=classic --timeout 600 --no-color \"test/tap/*.js\"",
+    "test-tap": "tap --reporter=classic --timeout 300 --no-color \"test/tap/*.js\"",
+    "tap": "tap --reporter=spec --timeout 300 --no-color",
+    "fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -40,7 +45,7 @@
   },
   "peerDependencies": {},
   "bundledDependencies": [],
-  "optionalDependencies": [],
+  "optionalDependencies": {},
   "engines": {
     "node": ">7.7.0"
   }
