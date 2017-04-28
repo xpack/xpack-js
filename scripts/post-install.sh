@@ -23,7 +23,7 @@ env
 
 if [ "${npm_config_global}" == "true" ]
 then
-  npm install xpm --global
-  npm install xmake --global
-  npm install xsvd --global
+  sudo npm install xpm --global
+  sudo npm install xmake --global
+  sudo npm install xsvd --global
 fi
