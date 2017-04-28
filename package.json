@@ -2,20 +2,11 @@
   "name": "xpack",
   "version": "0.1.1",
   "description": "The xPack tools collection",
-  "main": "./lib/module.js",
   "directories": {
-    "bin": "./bin",
-    "lib": "./lib",
-    "test": "./test"
   },
   "bin": {},
   "scripts": {
-    "prepublishOnly": "standard && npm run test-tap -s",
-    "test": "standard && npm run test-tap -s",
-    "test-coverage": "tap --coverage --reporter=classic --timeout 600 --no-color \"test/tap/*.js\"",
-    "test-tap": "tap --reporter=classic --timeout 300 --no-color \"test/tap/*.js\"",
-    "tap": "tap --reporter=spec --timeout 300 --no-color",
-    "fix": "standard --fix"
+    "postinstall": "bash scripts/post-install.sh"
   },
   "repository": {
     "type": "git",
@@ -23,6 +14,7 @@
   },
   "keywords": [
     "xpack",
+    "cli",
     "tools"
   ],
   "author": {
@@ -36,12 +28,8 @@
   },
   "homepage": "https://github.com/xpack/xpack-js",
   "dependencies": {
-    "xpm": "latest",
-    "xmake": "latest",
-    "xsvd": "latest"
   },
   "devDependencies": {
-    "standard": "*"
   },
   "peerDependencies": {},
   "bundledDependencies": [],
