@@ -3,9 +3,9 @@
   "version": "0.1.5",
   "description": "The xPack tools collection",
   "directories": {},
-  "bin": {},
+  "bin": {
+  },
   "scripts": {
-    "postinstall": "bash scripts/post-install.sh"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,11 @@
     "url": "https://github.com/xpack/xpack-js/issues"
   },
   "homepage": "https://github.com/xpack/xpack-js",
-  "dependencies": {},
+  "dependencies": {
+    "xpm": "latest",
+    "xmake": "latest",
+    "xsvd": "latest"
+  },
   "devDependencies": {},
   "peerDependencies": {},
   "bundledDependencies": [],
