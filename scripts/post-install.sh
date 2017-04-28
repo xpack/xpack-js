@@ -20,10 +20,13 @@ IFS=$'\n\t'
 # -----------------------------------------------------------------------------
 
 env
+id
 
-if [ "${npm_config_global}" == "true" ]
+if [ "${npm_config_global}" == "true_" ]
 then
   sudo npm install xpm --global
   sudo npm install xmake --global
   sudo npm install xsvd --global
 fi
+
+echo "not functional :-("
